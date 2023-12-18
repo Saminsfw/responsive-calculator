@@ -1,0 +1,57 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+  gap: 50px;
+  background-color: black;
+  border-radius: 20px;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body {
+  padding: 0 10%;
+  margin: 0 10%;
+}
+button {
+  background-color: black;
+  border-radius: 100%;
+  border: 0;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #525d4dc4;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+#inputBox {
+  text-align: right;
+  width: 300px;
+  font-size: 60px;
+  height: 40px;
+  background-color: black;
+  padding: 20px;
+  border: 0;
+}
+.operator {
+  color: rgb(0, 255, 4);
+}
+.equal-btn {
+  background-color: orangered;
+}
+input ::placeholder {
+  color: white;
+}
