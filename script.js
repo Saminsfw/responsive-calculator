@@ -1,6 +1,5 @@
 let input = document.getElementById("inputBox");
 let buttons = document.querySelectorAll("button");
-let result = input.value;
 let buttonArray = Array.from(buttons);
 buttonArray.forEach((button) => {
   button.addEventListener("click", (clickedButton) => {
