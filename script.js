@@ -5,17 +5,13 @@ let buttonArray = Array.from(buttons);
 buttonArray.forEach((button) => {
   button.addEventListener("click", (clickedButton) => {
     if (clickedButton.target.innerHTML == "=") {
-      result = eval(result);
-      input.value = result;
+      input.value = eval(input.value);
     } else if (clickedButton.target.innerHTML == "AC") {
-      result = "";
-      input.value = result;
+      input.value = "";
     } else if (clickedButton.target.innerHTML == "DEL") {
-      result = result.substring(0, result.length - 1);
-      input.value = result;
+      input.value = input.value.substring(0, input.value.length - 1);
     } else {
-      result += clickedButton.target.innerHTML;
-      input.value = result;
+      input.value += clickedButton.target.innerHTML;
     }
   });
 });
